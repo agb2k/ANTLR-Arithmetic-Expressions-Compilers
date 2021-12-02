@@ -17,16 +17,6 @@ public interface Expr2Listener extends ParseTreeListener {
 	 */
 	void exitProg(Expr2Parser.ProgContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link Expr2Parser#term}.
-	 * @param ctx the parse tree
-	 */
-	void enterTerm(Expr2Parser.TermContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link Expr2Parser#term}.
-	 * @param ctx the parse tree
-	 */
-	void exitTerm(Expr2Parser.TermContext ctx);
-	/**
 	 * Enter a parse tree produced by {@link Expr2Parser#expr}.
 	 * @param ctx the parse tree
 	 */
@@ -36,4 +26,14 @@ public interface Expr2Listener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitExpr(Expr2Parser.ExprContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link Expr2Parser#term}.
+	 * @param ctx the parse tree
+	 */
+	void enterTerm(Expr2Parser.TermContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link Expr2Parser#term}.
+	 * @param ctx the parse tree
+	 */
+	void exitTerm(Expr2Parser.TermContext ctx);
 }
